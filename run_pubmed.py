@@ -116,7 +116,7 @@ def main(rank1, rank0):
 
     # Prepare training
     saver = tf.train.Saver()
-    save_dir = "tmp/" + FLAGS.dataset + '_' + str(FLAGS.skip) + '_' + str(FLAGS.var) + '_' + FLAGS.sampler + '_' + str(FLAGS.gpu)
+    save_dir = "tmp/" + FLAGS.dataset + '_' + str(FLAGS.skip) + '_' + str(FLAGS.var) + '_' + str(FLAGS.gpu)
     acc_val = []
     acc_train = []
     train_time = []
@@ -145,7 +145,7 @@ def main(rank1, rank0):
             feed_dict.update({placeholders['dropout']: FLAGS.dropout})
 
             # Training step
-            outs = sess.run([model.opt_op, model.loss, model.accuracy, model.sample_params], feed_dict=feed_dict)
+            outs = sess.run([model.opt_op, model.loss, model.accuracy], feed_dict=feed_dict)
             acc_train.append(outs[-2])
 
         train_time_sample.append(time.time()-t1)
