@@ -145,7 +145,7 @@ def main(rank1, rank0):
 
     # Prepare training
     saver = tf.train.Saver()
-    save_dir = "tmp/" + FLAGS.dataset + '_' + str(FLAGS.skip) + '_' + str(FLAGS.var) + '_' + FLAGS.sampler + '_' + str(FLAGS.gpu)
+    save_dir = "tmp/" + FLAGS.dataset + '_' + str(FLAGS.skip) + '_' + str(FLAGS.var) + '_' + str(FLAGS.gpu)
     acc_val = []
     acc_train = []
     train_time = []
