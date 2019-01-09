@@ -19,7 +19,7 @@ We provide the datasets including cora, citeseer, pubmed. For reddit, you need t
 If you find this code useful for your research, please cite the paper:
 
 
-'''
+```
 @inproceedings{huang2018adapt,
   title={Adaptive Sampling Towards Fast Graph Representation Learning},
   author={Huang, Wenbing and Zhang, Tong and Rong, Yu and Huang, Junzhou},
@@ -27,7 +27,7 @@ If you find this code useful for your research, please cite the paper:
   pages={},
   year={2018}
 }
-'''
+```
 
 
 
