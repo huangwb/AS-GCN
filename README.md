@@ -11,8 +11,14 @@ We provide the datasets including cora, citeseer, pubmed. For reddit, you need t
 
 ## Run the Code
 
-1) For cora, citeseer and pubmed, try "python run_pubmed.py --dataset dataset_name" ;
-2) For reddit, try "python run_reddit.py"
+1) For cora, citeseer and pubmed, try
+```
+python run_pubmed.py --dataset dataset_name
+```
+2) For reddit, try 
+```
+python run_reddit.py
+```
 
 
 ## Citation
